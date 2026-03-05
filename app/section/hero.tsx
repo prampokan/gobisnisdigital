@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TrendingUp } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -20,9 +20,18 @@ export default function Hero() {
         </h1>
       </div>
       <h2 className="text-xl sm:text-2xl font-medium tracking-tight text-accent-foreground mt-5 sm:mt-12 max-w-md leading-relaxed">
-        Landing Page Profesional untuk Bisnis yang Mau{" "}
-        <span className="text-orange-400">Naik Kelas!</span>
+        Landing Page Profesional untuk Bisnis yang Mau Naik Kelas!
       </h2>
+      <div className="grid grid-cols-3"></div>
+      <div className="flex mt-10 gap-x-2">
+        <Button variant="primary" className="rounded-full">
+          Konsultasi Gratis Sekarang
+        </Button>
+        <Button variant="default" className="rounded-full hover:shadow-xl">
+          Lihat Paket Harga
+          <MoveRight />
+        </Button>
+      </div>
     </div>
   );
 }

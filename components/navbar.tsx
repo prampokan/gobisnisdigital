@@ -15,8 +15,8 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="fixed w-full flex justify-center items-center h-24 px-5">
-      <div className="hidden sm:flex justify-between bg-background/20 backdrop-blur items-center p-2 rounded-full shadow hover:shadow-xl transition-all">
+    <div className="fixed w-full flex justify-center items-center h-24 px-5 z-50">
+      <div className="hidden sm:flex justify-between bg-background/20 backdrop-blur items-center p-2 rounded-full shadow hover:shadow-xl transition-all z-50">
         <Button className="rounded-full" variant="nav">
           <h1 className="font-medium text-base tracking-tighter text-accent-foreground">
             ⚡Digitalin Bisnis
@@ -37,7 +37,7 @@ export default function Navbar() {
           ⚡Digitalin Bisnis
         </Button>
         <Sheet>
-          <SheetTrigger className="">
+          <SheetTrigger asChild>
             <Button variant="primary" size="icon" className="rounded-xl">
               <Menu />
             </Button>
