@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="w-full flex flex-col items-center text-center mt-10">
+    <div className="w-full flex flex-col items-center text-center">
       <div className="flex items-center gap-x-4">
         {/* <div className="w-20 h-20">
           <Image
@@ -23,7 +23,7 @@ export default function Hero() {
         Landing Page Profesional untuk Bisnis yang Mau Naik Kelas!
       </h2>
       <div className="grid grid-cols-3"></div>
-      <div className="flex mt-10 gap-x-2">
+      <div className="flex flex-col sm:flex-row mt-10 gap-3 w-full justify-center">
         <Button variant="primary" className="rounded-full">
           Konsultasi Gratis Sekarang
         </Button>
