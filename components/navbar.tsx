@@ -88,6 +88,12 @@ export default function Navbar() {
           </SheetContent>
         </Sheet>
       </div>
+      <Button
+        variant="primary"
+        className="absolute top-7 right-5 rounded-full hidden sm:block"
+      >
+        🏳️‍⚧️
+      </Button>
     </div>
   );
 }

@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export default function TemplateCard() {
   return (
-    <div className="group w-full max-w-md rounded-3xl overflow-hidden cursor-pointer p-1 shadow bg-background/50 col-span-1">
+    <div className="group w-full rounded-3xl overflow-hidden cursor-pointer p-1 shadow bg-background/50">
       <div className="aspect-video w-full rounded-2xl overflow-hidden relative h-auto">
         <Image
           src="/assets/images/pulsajaya.png"
           alt="template 1"
           width={500}
           height={500}
-          className="object-cover object-top transition-all duration-500 group-hover:blur-sm group-hover:scale-110"
+          className="w-full h-full object-cover object-top transition-all duration-500 group-hover:blur-sm group-hover:scale-110"
         />
         <div className="absolute inset-0 rounded-2xl bg-transparent backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none" />
       </div>
