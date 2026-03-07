@@ -12,6 +12,15 @@ import {
 import { Menu, EllipsisVertical, Wallpaper } from "lucide-react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import Image from "next/image";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Navbar() {
   return (
@@ -88,12 +97,28 @@ export default function Navbar() {
           </SheetContent>
         </Sheet>
       </div>
-      <Button
-        variant="primary"
-        className="absolute top-7 right-5 rounded-full hidden sm:block"
-      >
-        🏳️‍⚧️
-      </Button>
+
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button
+            variant="primary"
+            className="absolute top-7 right-5 rounded-full hidden sm:block"
+          >
+            🏳️‍⚧️
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent
+          side="left"
+          align="start"
+          className="-translate-x-1 bg-background/50"
+        >
+          <DropdownMenuGroup>
+            <DropdownMenuLabel>Change Language</DropdownMenuLabel>
+            <DropdownMenuItem>Indonesia</DropdownMenuItem>
+            <DropdownMenuItem>English</DropdownMenuItem>
+          </DropdownMenuGroup>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 }
